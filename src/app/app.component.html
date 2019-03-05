@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header #myhead></header>
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>
+<div style="text-align:left">
+    <mat-list>
+        <mat-list-item *ngFor="let hero of hero.heroList"> 
+            <span>{{ hero.no }}、</span>
+            <span>{{ hero.name }}</span>    
+        </mat-list-item>
+    </mat-list>
+    <br>
+    <hr>
+    <mat-list>
+        <mat-list-item *ngFor="let animate of animate.animateList"> 
+            <span>{{ animate.no }}、</span>
+            <span>{{ animate.name }}</span>    
+        </mat-list-item>
+    </mat-list>
+</div>
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+/* Material UI style changes */
+.mat-list-item {
+    border-left: 3px solid transparent;
+    margin-bottom: 20px;
+}
+.mat-list-item:hover {
+    border-left: 3px solid orangered;
+    margin-bottom: 20px;
+}
