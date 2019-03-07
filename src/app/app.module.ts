@@ -9,7 +9,8 @@ import {
   MatListModule, 
   MatIconModule, 
   MatMenuModule, 
-  MatTabsModule
+  MatTabsModule,
+  MatToolbarModule
 } from '@angular/material'
 
 import { AppRoutingModule } from './app-routing.module'
@@ -18,14 +19,24 @@ import { AppComponent } from './app.component'
 import { HeadComponent } from './component/head/head.component'
 
 import { TestComponent } from './test/test.component'
-import { FooterComponent } from './component/footer/footer.component'
+import { FooterComponent } from './component/footer/footer.component';
+import { MainComponent } from './component/main/main.component';
+import { DragDirective } from './directive/drag.directive';
+import { DragCloneElementDirective } from './directive/drag-clone-element.directive';
+import { TitleComponent } from './component/private/title/title.component';
+import { LevelledParaComponent } from './component/private/levelled-para/levelled-para.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     TestComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent,
+    DragDirective,
+    DragCloneElementDirective,
+    TitleComponent,
+    LevelledParaComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,8 @@ import { FooterComponent } from './component/footer/footer.component'
     MatListModule,
     MatIconModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -49,7 +61,8 @@ import { FooterComponent } from './component/footer/footer.component'
     MatListModule,
     MatIconModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    MatToolbarModule
   ]
 })
 export class AppModule { }

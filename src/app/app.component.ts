@@ -9,8 +9,9 @@ import * as $ from 'jquery';
   providers: [AnimateService, heroService]
 })
 export class AppComponent {
- 
-  title:string = 'hello';
+
+  @ViewChild('main') main
+
   constructor(
     private animate:AnimateService, 
     private hero:heroService, 
@@ -21,6 +22,9 @@ export class AppComponent {
   }
   ngOnInit () {
 
+  }
+  ngAfterViewInit (el) {
+    console.log('DOM更新后的调用ngAfterViewInit');
   }
   
 }

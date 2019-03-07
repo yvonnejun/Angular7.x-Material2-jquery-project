@@ -1,0 +1,27 @@
+.example-container {
+    width: 100%;
+    min-height: 768px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+/* 右边主区域样式 */
+.example-sidenav-content {
+    display: flex;
+    height: 768px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 左边栏样式 */
+.example-sidenav { 
+    padding: 80px;
+}
+.mat-raised-button {
+
+}
+.sn {
+    width: 100px;
+    height: 100px;
+    background-color: #CCEBF8;
+    border: 1px solid #67BEE5;
+    cursor: pointer;
+}

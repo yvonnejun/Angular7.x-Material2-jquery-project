@@ -1,0 +1,38 @@
+
+.element-style {
+    position: absolute;
+    width: 100px;
+    height: 72px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 24px;
+    border: 1px solid transparent;
+    top: 40px;
+    left: 28px;
+}
+.clone-element-style {
+    position: absolute;
+    text-align: center;
+    cursor: crosshair;
+    border: 1px dashed #aaa;
+    font-size: 24px;
+    margin-top: 23px;
+}
+.element-style:hover {
+    background-color: #CCEBF8;
+    border: 1px solid #67BEE5;
+}
+.element-style b {
+    font-size: 24px;
+    display: block;
+}
+.para-style {
+    width: 500px;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+    border: 1px dashed;
+    padding: 4px;
+    font-size: 14px;
+}

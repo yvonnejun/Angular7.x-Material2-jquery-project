@@ -1,0 +1,20 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar-multiple-rows {
+      min-height: 32px;
+  }
+  .mat-toolbar-row, .mat-toolbar-single-row {
+      height: 32px;
+  }
+  .mat-toolbar-multiple-rows img {
+      margin-right: 12px;
+  }
+  .mat-toolbar.mat-primary {
+      font-size: 14px;
+  }
