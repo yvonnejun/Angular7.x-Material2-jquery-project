@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./head.component.css']
 })
 export class HeadComponent {
-    private title = 'IETM管理系统';
+  private title = 'IETM管理系统';
+  private isshowtitlesup = false;
+  constructor() { }
+
+  ngOnInit() {
+  }
+  showTitleSup (evt:any) {
+    this.isshowtitlesup = true;
+  }
 }

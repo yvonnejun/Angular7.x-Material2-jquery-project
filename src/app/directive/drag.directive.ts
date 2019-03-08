@@ -26,14 +26,12 @@ export class DragDirective {
     cloneEle.empty();
     console.log(cloneEle);
     cloneEle.removeAttr('appdrag');
-    cloneEle.attr('appDragCloneElement', '');
     // $(this.el.nativeElement).children().eq(0).clone(true).appendTo(cloneEle);
     $(this.el.nativeElement).children('.item-select').each(function(){
       $(this).clone(true).show().appendTo(self.cloneElement);
     });
     cloneEle.removeClass('element-style').addClass('clone-element-style');
     cloneEle.appendTo('body') // 不能添加到body区域，否则动态生成的元素不受angular指令约束和控制
-    // cloneEle.appendTo('.example-container');
     cloneEle.css({
       position:'absolute',
       zIndex: 9,

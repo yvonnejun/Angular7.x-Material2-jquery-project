@@ -14,6 +14,8 @@ import {
 } from '@angular/material'
 
 import { AppRoutingModule } from './app-routing.module'
+import { HttpClientModule } from '@angular/common/http'
+import { Observable } from 'rxjs'
 import { AppComponent } from './app.component'
 
 import { HeadComponent } from './component/head/head.component'
@@ -22,7 +24,6 @@ import { TestComponent } from './test/test.component'
 import { FooterComponent } from './component/footer/footer.component';
 import { MainComponent } from './component/main/main.component';
 import { DragDirective } from './directive/drag.directive';
-import { DragCloneElementDirective } from './directive/drag-clone-element.directive';
 import { TitleComponent } from './component/private/title/title.component';
 import { LevelledParaComponent } from './component/private/levelled-para/levelled-para.component'
 
@@ -34,7 +35,6 @@ import { LevelledParaComponent } from './component/private/levelled-para/levelle
     FooterComponent,
     MainComponent,
     DragDirective,
-    DragCloneElementDirective,
     TitleComponent,
     LevelledParaComponent
   ],
@@ -43,6 +43,7 @@ import { LevelledParaComponent } from './component/private/levelled-para/levelle
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatButtonModule, 
     MatCheckboxModule,
     MatSidenavModule,
